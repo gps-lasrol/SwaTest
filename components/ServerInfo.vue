@@ -6,8 +6,7 @@
 
 <script setup>
 
-    const {data} = useFetch("/api/info");
-
-    console.log(data);
+    const {data} = await useFetch("/api/info");
+    console.log(data.value);
 
 </script>

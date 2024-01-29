@@ -29,7 +29,8 @@ jobs:
       - name: Build production bundle
         uses: borales/actions-yarn@v4
         with:
-          cmd: build:prod
+          cmd: 'build'
+          env: NITRO_PRESET=azure
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

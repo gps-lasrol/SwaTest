@@ -1,6 +1,8 @@
 export default defineEventHandler((event) => {
 
     return {
-      hello: 'world'
+      node: event.node,
+      context: event.context,
+      headers: event.headers
     }
   })
